@@ -59,7 +59,7 @@
       <nav>
         <div>
           <div class="navbar bg-red-400 rounded-full">
-            <div class="navbar-start flex justify-between items-center">
+            <div class="navbar-start flex justify-around items-center">
               <div class="dropdown">
                 <label tabindex="0" class="btn btn-ghost lg:hidden">
                   <svg
@@ -127,7 +127,7 @@
             <!-- slide 1 -->
 
             <div id="slide1" class="carousel-item relative w-full bg-bg-slide1 h-screen">
-              <div class="banner-content flex-auto justify-center items-center">
+              <div class="banner-content flex-auto justify-around items-center">
                 <h3
                   class="text-center font-lato text-7xl font-extrabold text-white"
                 >
@@ -182,9 +182,142 @@
             </div>
           </div>
         </div>
+        <div class="extra-container flex justify-around items-center">
+            <div class="">
+                <img src="./images/fruit1.png" alt="" class="">
+                <p class="">Cheri</p>
+            </div>
+            <div class="">
+                <img src="./images/fruit2.png" alt="" class="">
+                <p class="">Mango</p>
+            </div>
+            <div class="">
+                <img src="./images/fruit3.png" alt="" class="">
+                <p class="">Orang</p>
+            </div>
+            <div class="">
+                <img src="./images/fruit4.png" alt="" class="">
+                <p class="">Strawberry</p>
+            </div>
+            <div class="">
+                <img src="./images/fruit5.png" alt="" class="">
+                <p class="">Pomegranate</p>
+            </div>
+        
+        </div>
       </section>
 
-      <!-- banner section finished -->
+    <!-- banner section finished -->
+
+      <!-- deal of the day section started -->
+    <section>
+        <div class="section-content flex justify-around items-center">
+            <div class="">
+                <h3 class="text-center font-lato text-5xl font-extrabold">Deal of the day</h3>
+                <p class="text-[#12121299] font-lato text-base font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+            <div class="countdown-timer">
+                <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:15;"></span>
+                      </span>
+                      days
+                    </div> 
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:10;"></span>
+                      </span>
+                      hours
+                    </div> 
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:24;"></span>
+                      </span>
+                      min
+                    </div> 
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:32;"></span>
+                      </span>
+                      sec
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="section-cards">
+
+            <!-- card 1 -->
+            
+                <div class="card w-96 bg-base-100 shadow-xl border border-slate-200">
+                    <figure class="px-10 pt-10">        
+                      <img src="./images/fruit6.png" alt="fruits" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title font-lato font-bold text-2xl text-center text-black">12.90$ - 18.85$</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <hr class="w-60 ">
+                      <p class="text-[#12121299] font-medium text-base text-center"></p>
+                      <div class="rating rating-lg rating-half">
+                        <input type="radio" name="rating-10" class="rating-hidden" />
+                        <input type="radio" name="rating-10" class="bg-red-400 mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-red-400 mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-red-400 mask mask-star-2 mask-half-1" checked />
+                        <input type="radio" name="rating-10" class="bg-red-400 mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-red-400 mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-red-400 mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-red-400 mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-red-400 mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-red-400 mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-red-400 mask mask-star-2 mask-half-2" />
+                      </div>
+                      <div>
+                      <!-- The button to open modal -->
+                        <a href="#my_modal_8" class="text-red-400">Details</a>
+                        <!-- Put this part before </body> tag -->
+                        <div class="modal" id="my_modal_8">
+                            <div class="modal-box flex-row items-center text-center px-15 py-25">
+                               
+                                <div class="flex justify-around items-center mb-6">
+                                    <img src="./images/fruit6.png" alt="" class="h-60 w-52">
+                                </div>
+                                <h3 class="font-extrabold text-4xl text-center text-black mb-6">Apple</h3>
+                                <p class="py-4 text-[#12121299] text-center text-base font-medium mb-7">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                               
+                                <div class="rating rating-lg rating-half">
+                                    <input type="radio" name="rating-10" class="rating-hidden" />
+                                    <input type="radio" name="rating-10" class="bg-red-400 mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating-10" class="bg-red-400 mask mask-star-2 mask-half-2" />
+                                    <input type="radio" name="rating-10" class="bg-red-400 mask mask-star-2 mask-half-1" checked />
+                                    <input type="radio" name="rating-10" class="bg-red-400 mask mask-star-2 mask-half-2" />
+                                    <input type="radio" name="rating-10" class="bg-red-400 mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating-10" class="bg-red-400 mask mask-star-2 mask-half-2" />
+                                    <input type="radio" name="rating-10" class="bg-red-400 mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating-10" class="bg-red-400 mask mask-star-2 mask-half-2" />
+                                    <input type="radio" name="rating-10" class="bg-red-400 mask mask-star-2 mask-half-1" />
+                                    <input type="radio" name="rating-10" class="bg-red-400 mask mask-star-2 mask-half-2" />
+                                </div>
+                                 <div class="modal-action  flex-row justify-center items-center mt-9">
+                                    <button class="btn bg-red-400 text-white text-xl font-normal">Buy Now</button>
+                                    <a href="#" class="btn ">Close</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+
+                    </div>
+                </div>
+            
+            
+        </div>
+        
+
+    </section>
+
+    <!-- deal of the day section finished -->
+
+
     </main>
     <footer></footer>
   </body>
