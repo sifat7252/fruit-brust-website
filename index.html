@@ -6,7 +6,7 @@
     <title>Fruit Brust</title>
     <link rel="stylesheet" href="styles.css" />
     <!-- favicon setup -->
-    <link rel="favicon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="favicon" href="./images/favicon.ico" type="image/x-icon" class="favicon" />
     <!-- google font setup -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,8 +27,13 @@
       tailwind.config = {
         theme: {
           extend: {
-            colors: {
-              clifford: "#da373d",
+            backgroundImage: {
+                "favicon" : "url('./images/favicon.ico')",
+              "bg-slide1": "url('./images/banner1.png')",
+              "bg-slide2": "url('./images/banner2.png')",
+              "bg-slide3": "url('./images/banner3.png')",
+              "bg-slide4": "url('./images/banner4.png')",
+
             },
           },
         },
@@ -40,12 +45,11 @@
         margin: 0;
         padding: 0;
       }
-      .font-lato{
-        font-family: 'Lato', sans-serif;
-
+      .font-lato {
+        font-family: "Lato", sans-serif;
       }
-      .font-sans{
-        font-family: 'Open Sans', sans-serif;
+      .font-sans {
+        font-family: "Open Sans", sans-serif;
       }
     </style>
   </head>
@@ -54,8 +58,8 @@
       <!-- nav bar started -->
       <nav>
         <div>
-          <div class="navbar bg-pink-400">
-            <div class="navbar-start flex justify-evenly items-center">
+          <div class="navbar bg-red-400 rounded-full">
+            <div class="navbar-start flex justify-between items-center">
               <div class="dropdown">
                 <label tabindex="0" class="btn btn-ghost lg:hidden">
                   <svg
@@ -84,7 +88,9 @@
                 </ul>
               </div>
               <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
+                <ul
+                  class="menu menu-horizontal px-1 text-lg font-medium text-white"
+                >
                   <li><a>Home</a></li>
                   <li><a>About Us</a></li>
                   <li><a>Shop</a></li>
@@ -93,25 +99,93 @@
               </div>
               <div class="flex items-center gap-2">
                 <img src="./images/logo.png" alt="" class="" />
-                <a class="normal-case text-xl">Fruit Brust</a>
+                <a class="normal-case text-4xl font-bold text-white"
+                  >Fruit Brust</a
+                >
               </div>
-            </div>
-
-            <div class="navbar-end">
+              <div class="navbar-end">
               <input
-                type="search"
-                name=""
-                placeholder="search here "
-                id=""
-                class="md:hidden"
+                type="text"
+                placeholder="search here"
+                class="input input-bordered w-full max-w-xs rounded-full"
               />
-              <button type="btn btn-primary submit"><i class="fa fa-search"></i></button>
             </div>
+            
+
+            
           </div>
         </div>
       </nav>
+      <!-- nav bar finished -->
     </header>
-    <main></main>
+    <main>
+      <!-- banner or carousel section started -->
+      <section>
+        <div class="mt-14">
+          <div class="carousel w-full ">
+
+            <!-- slide 1 -->
+
+            <div id="slide1" class="carousel-item relative w-full bg-bg-slide1 h-screen">
+              <div class="banner-content flex-auto justify-center items-center">
+                <h3
+                  class="text-center font-lato text-7xl font-extrabold text-white"
+                >
+                  Exotic tastes at your doorstep
+                </h3>
+                <p class="text-white text-center font-lato text-xl font-medium">
+                  We supply highly quality organic products
+                </p>
+                <button class="btn bg-red-400 border-none text-white">Shop Now</button>
+              </div>
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide4" class="btn btn-circle">❮</a>
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+
+            <!-- slide 2 -->
+
+            <div id="slide2" class="carousel-item relative w-full bg-bg-slide2">
+              
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+
+            <!-- slide 3 -->
+
+            <div id="slide3" class="carousel-item relative w-full bg-bg-slide3">
+              
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide2" class="btn btn-circle">❮</a>
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+
+            <!-- slide 4 -->
+
+            <div id="slide4" class="carousel-item relative w-full bg-bg-slide4">
+              
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- banner section finished -->
+    </main>
     <footer></footer>
   </body>
 </html>
